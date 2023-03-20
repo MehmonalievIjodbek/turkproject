@@ -56,7 +56,6 @@ const OpenModal = () => {
         closable={false}
         onClose={onClose}
         open={open}
-        // closeIcon={<CloseOutlined />}
         key={placement}
         width={380}
         extra={
