@@ -1,0 +1,661 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.container {
+  max-width: 1216px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  padding: 28px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  align-items: center;
+  &-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+  }
+  &-nav {
+    display: flex;
+    gap: 30px;
+    span {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #667085;
+    }
+  }
+  &-contact {
+    span {
+      font-family: "Inter", sans-serif;
+
+      color: #ffffff;
+      background: #1570ef;
+      border: 1px solid #1570ef;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 8px;
+      padding: 10px 18px;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  &-text {
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #98a2b3;
+    }
+  }
+}
+
+.home {
+  margin: 70px 0;
+  border-bottom: 1px solid #98a2b3;
+  &-banner {
+    h1 {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 72px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #101828;
+      margin-bottom: 50px;
+    }
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+  &-ourpartners {
+    margin: 50px 0 70px 0;
+    h2 {
+      text-transform: capitalize;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 60px;
+      text-align: center;
+      color: #101828;
+      margin-bottom: 40px;
+    }
+    &-company {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      justify-content: space-between !important;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+    }
+  }
+}
+
+.our-partner {
+  margin-bottom: 100px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  p {
+    max-width: 536px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #101828;
+    margin-bottom: 150px;
+  }
+  a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #175cd3;
+  }
+}
+
+.fields {
+  margin-bottom: 100px;
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+    margin-bottom: 100px;
+  }
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-content: space-between !important;
+    gap: 100px;
+    &__cards {
+      span {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #667085;
+      }
+    }
+  }
+}
+
+.about {
+  &-year {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    p {
+      max-width: 260px;
+      width: 100%;
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 52px;
+      letter-spacing: -0.02em;
+      color: #101828;
+    }
+    span {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 52px;
+      letter-spacing: -0.02em;
+      color: #101828;
+    }
+  }
+  &-countries {
+    h2 {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 60px;
+      line-height: 24px;
+      text-align: center;
+      color: #101828;
+      margin: 70px 0;
+    }
+    &__cont {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      justify-content: space-between;
+      .flag-text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        p {
+          max-width: 100px;
+          width: 100%;
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000000;
+        }
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  &-equipment {
+    text-align: center;
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 42px;
+      line-height: 24px;
+      text-align: center;
+      color: #101828;
+      margin: 70px 0 30px 0;
+    }
+    span {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      color: #101828;
+    }
+  }
+  &-brands {
+    margin: 70px 0;
+    h2 {
+      text-transform: capitalize;
+      font-family: "Inter", sans-serif;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 60px;
+      color: #101828;
+      margin-bottom: 40px;
+    }
+    &__brand {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 50px;
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 24px;
+        text-align: center;
+        color: #101828;
+      }
+      span {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 24px;
+        text-align: center;
+        color: #667085;
+      }
+    }
+  }
+}
+
+.products {
+  table {
+    font-family: "Inter ", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(1) {
+    background-color: #dddddd;
+  }
+}
+
+.contact {
+  h2 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+    margin: 50px 0;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 24px;
+    text-align: center;
+
+    margin: 40px 0;
+    color: #101828;
+  }
+  span {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #101828;
+  }
+  h3 {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #101828;
+    margin: 40px 0 0 0;
+  }
+  &-tel {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #101828;
+      margin: 10px 0;
+      max-width: 30px;
+      width: 100%;
+    }
+    a {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 10px 0;
+    }
+  }
+}
+
+.open-modal {
+  display: none;
+}
+.homeSelect-right__container {
+  margin-bottom: 35px;
+  .homeSelect-right__container-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #175cd3;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-1me4733).ant-btn-default {
+  border: none;
+  box-shadow: none;
+}
+
+:where(.css-dev-only-do-not-override-1me4733).ant-btn > span {
+  font-size: 25px;
+}
+:where(.css-dev-only-do-not-override-1me4733).ant-btn-primary {
+  background: none !important;
+  color: #000000;
+  box-shadow: none;
+}
+:where(.css-dev-only-do-not-override-1me4733).ant-btn-primary:not(
+    :disabled
+  ):hover {
+  color: #000000;
+}
+
+@media screen and (max-width: 1220px) {
+  body {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .home-ourpartners-company {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center !important;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .our-partner__container {
+    p {
+      width: 100%;
+      font-weight: 600;
+      font-size: 38px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .about-countries {
+    h2 {
+      font-size: 44px;
+    }
+  }
+  .about-countries__cont {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .about-brands__brand {
+    h3 {
+      font-size: 32px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 683px) {
+  .our-partner__container {
+    margin-bottom: 40px;
+  }
+  .fields-card {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-content: space-between !important;
+  }
+}
+@media screen and (max-width: 555px) {
+  .home-ourpartners-company {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: center !important;
+    gap: 30px;
+  }
+  .our-partner__container {
+    p {
+      width: 100%;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 32px;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .about-countries {
+    h2 {
+      font-size: 32px;
+    }
+  }
+}
+
+@media screen and (max-width: 505px) {
+  .fields {
+    h2 {
+      line-height: 60px;
+    }
+  }
+  .header-nav {
+    display: none;
+  }
+  .header-contact {
+    display: none;
+  }
+  .open-modal {
+    display: block;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+  }
+  .home-banner {
+    h1 {
+      font-size: 44px;
+      line-height: 50px;
+    }
+  }
+  .home-ourpartners {
+    h2 {
+      font-size: 38px;
+    }
+  }
+  .about-year {
+    gap: 30px !important;
+  }
+  .about-equipment {
+    p {
+      line-height: 60px;
+    }
+  }
+  .contact {
+    h2 {
+      line-height: 55px;
+    }
+    p {
+      line-height: 45px;
+    }
+    span {
+      line-height: 40px;
+    }
+  }
+}
+@media screen and (max-width: 410px) {
+  .home-ourpartners-company {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center !important;
+    gap: 30px;
+  }
+  .fields-card {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-content: space-between !important;
+  }
+  .about-countries {
+    h2 {
+      line-height: 50px;
+    }
+  }
+  .about-countries__cont {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    .flag-text {
+      justify-content: space-between !important;
+    }
+  }
+  .about-brands__brand {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .products {
+    td,
+    th {
+      padding: 2px;
+    }
+  }
+}
