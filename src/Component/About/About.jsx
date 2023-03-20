@@ -8,7 +8,7 @@ const countries = [
   },
   {
     id: 2,
-    text: "Northern",
+    text: "Northern Cyprus",
     img: "/img/Northern.png",
   },
   {
@@ -44,7 +44,7 @@ const countries = [
   {
     id: 9,
     text: "Tajikistan",
-    img: "/img/azerbaijan.png",
+    img: "/img/tajikistan.png",
   },
   {
     id: 10,

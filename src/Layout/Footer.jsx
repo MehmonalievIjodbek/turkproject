@@ -8,7 +8,7 @@ const Footer = () => {
           <img src="/img/logo.png" alt="" />
         </div>
         <div className="footer-text">
-          <p>© 2077 All rights reserved.</p>
+          <p>© 2023 All rights reserved.</p>
         </div>
       </div>
     </div>
